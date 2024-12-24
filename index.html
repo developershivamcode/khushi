@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Page with Shayari</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {000428
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+    button {
+      padding: 15px 40px;
+      font-size: 1.3rem;
+      color: #243b55;
+      background: lightblue;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      animation: fadeIn 3s ease-in-out;
+    }
+    button:hover {
+      background: #243b55;
+      color: #fff;
+      transform: scale(1.1);
+    }
+    .shayari-container {
+      display: none;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .shayari-container h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #f9c74f;
+    }
+    .shayari-container p {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      color: #fff;
+      margin: 0;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to my dear bestie❤</h1>
+  <p>Click the button below to reveal a beautiful Shayari just for you!</p>
+  <button onclick="showShayari()">Click Me</button>
+
+  <div class="shayari-container" id="shayari">
+    <h2>Shayari for You</h2>
+    <p>
+      "Zindagi ke har mod par tera saath chahiye,<br>
+      Khushi ke lamhon mein tera ehsaas chahiye.<br>
+      Bina maange jo mil jaye woh khwab ho tum,<br>
+      Bas har waqt tumhara saath chahiye🥰."
+    </p>
+  </div>
+
+  <script>
+    function showShayari() {
+      const shayariDiv = document.getElementById('shayari');
+      shayariDiv.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
